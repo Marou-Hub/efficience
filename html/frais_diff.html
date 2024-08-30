@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="../js/main.js"></script>
+
+        <title>EFFICIENCE</title>
+    </head>
+
+    <body>
+        <header>
+            <a href="../index.html"><img src="../images/logo_reseau.jpg"></a>
+
+            <nav class="navbar bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Institutions et instances
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./instances.html">Instances</a></li>
+                                        <li><a class="dropdown-item" href="#">Lexique</a></li>
+                                        <li><a class="dropdown-item" href="./positionsCFVU.html">Positions d'Efficience</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" style="color: #f3ba00" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Aides utiles
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item active" style="background-color: #f3ba00" href="./frais_diff.html">Frais différenciés</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="./agenda2024.html">Agenda</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div>
+                <h1>Frais différenciés</h1>
+
+                <div class="quiz">
+                    <p>Vous êtes un étudiant étranger (étudiant extra-communautaire, n'ayant pas la nationalité d'un pays de l'Union Européenne, de l'Espace Economique Européen ou de Suisse) ?</p>
+
+                    <button class="btn btn-primary" type="submit" onclick="start()">Quizz</button>
+                </div>
+
+                <div class="quiz contenu" id="question1">
+                    <p id="p1">Venez-vous étudier dans le cadre d'une convention de partenariat entre universités qui prévoit une exonération totale des droits d'inscription (exemple : programmes d'échanges Erasmus+) ?</p>
+
+                    <button class="btn btn-primary" type="submit" onclick="answer(1)">Oui</button>
+                    <button class="btn btn-primary" type="submit" onclick="nextQuestion(2)">Non</button>
+                </div>
+
+                <div class="quiz contenu" id="question2">
+                    <p>Êtes-vous titulaire d'une bourse du gouvernement français (BGF) ?</p>
+
+                    <button class="btn btn-primary" type="submit" onclick="answer(1)">Oui</button>
+                    <button class="btn btn-primary" type="submit" onclick="nextQuestion(3)">Non</button>
+                </div>
+
+                <div class="quiz contenu" id="question3">
+                    <p>Êtes-vous titulaire d'une bourse de votre établissement d'accueil, prévoyant une exonération totale des droits d'inscription ?</p>
+
+                    <button class="btn btn-primary" type="submit" onclick="answer(1)">Oui</button>
+                    <button class="btn btn-primary" type="submit" onclick="nextQuestion(4)">Non</button>
+                </div>
+
+                <div class="quiz contenu" id="answer1">
+                    <p>Vous n'avez aucun droits d'inscription à payer, qu'ils soient différenciés ou non !</p>
+                </div>
+
+                <div class="quiz contenu" id="question4">
+                    <p>Êtes-vous un étudiant porteur d'une carte de résident de longue durée ou un étudiant ayant déclaré son foyer fiscal/étant rattaché à un foyer fiscal en France depuis plus de 2 ans ?</p>
+
+                    <button class="btn btn-primary" type="submit" onclick="answer(2)">Oui</button>
+                    <button class="btn btn-primary" type="submit" onclick="nextQuestion(5)">Non</button>
+                </div>
+
+                <div class="quiz contenu" id="question5">
+                    <p>Êtes-vous un étudiant ayant le statut de réfugié ou bénéficiaire de la protection subsidiaire ?</p>
+
+                    <button class="btn btn-primary" type="submit" onclick="answer(2)">Oui</button>
+                    <button class="btn btn-primary" type="submit" onclick="nextQuestion(6)">Non</button>
+                </div>
+
+                <div class="quiz contenu" id="question6">
+                    <p>Êtes-vous inscrit en 2018/2019 dans un centre de français langue étrangère (FLE) ?</p>
+
+                    <button class="btn btn-primary" type="submit" onclick="answer(2)">Oui</button>
+                    <button class="btn btn-primary" type="submit" onclick="nextQuestion(7)">Non</button>
+                </div>
+
+                <div class="quiz contenu" id="question7">
+                    <p>Êtes-vous déjà inscrit dans un établissement public d'enseignement supérieur en 2018/2019, tous niveaux confondus (Licence, Master, Doctorat) ?</p>
+
+                    <button class="btn btn-primary" type="submit" onclick="answer(2)">Oui</button>
+                    <button class="btn btn-primary" type="submit" onclick="nextQuestion(8)">Non</button>
+                </div>
+
+                <div class="quiz contenu" id="question8">
+                    <p>Êtes-vous dans le même niveau de cursus (Licence, Master ou Doctorat), avez validé votre année et êtes inscrit dans l'université depuis 2020/2021 ?</p>
+
+                    <button class="btn btn-primary" type="submit" onclick="answer(2)">Oui</button>
+                    <button class="btn btn-primary" type="submit" onclick="answer(3)">Non</button>
+                </div>
+
+                <div class="quiz contenu" id="answer2">
+                    <p>Vous n'êtes pas concerné(e) par les frais différenciés et payez donc les tarifs standards !</p>
+                    <p><small class="text-body-secondary">Insérer screenshot des tarifs</small></p>
+                </div>
+
+                <div class="quiz contenu" id="answer3">
+                    <p>Vous devez payer les frais différenciés :</p>
+                    <ul>
+                        <li>2 770€ Licence</li>
+                        <li>3 770€ Master</li>
+                    </ul>
+
+                    <br>
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Vous êtes dans une situation financière ?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Vous pouvez demmander un remboursement total ou partiel des frais par la commission sociale de l'université qui peut ou non vous l'accorder.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

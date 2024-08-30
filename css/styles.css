@@ -1,15 +1,13 @@
 html{
-    font-family: crimson text, sans-serif;
+    font-family: bahnschrift, sans-serif;
 }
 
-hr{
-    height: 1em;
-    border: none;
-}
 
 /****** Header ******/
+
 header{
     background: linear-gradient(to right, #2c7373, #025656, #025656, #025656, #2c7373);
+    margin: 0;
 }
 
 header a{
@@ -18,100 +16,78 @@ header a{
 }
 
 header img{
-    width: 30%;
+    width: 35%;
 }
 
 
-/****** Main ******/
-main{
-    margin: 2rem;
-    display: flex;
-    flex-direction: row;
-}
-
-nav{
-    width: 25%;
-}
-
-nav a{
-    display: block;
-    text-decoration: none;
-    color: black;
-    border-bottom: 2px solid transparent;
-    padding: 20px 10px;
-}
-
-nav a:hover{
-    color: #f3ba00;
-    border-bottom: 2px solid #f3ba00;
-}
+/****** Header ******/
 
 li{
-    list-style-type: disc;
-}
-
-li:hover{
-    color: #f3ba00;}
-
-.deroulant{
-    list-style-type: 'v';
-}
-
-.deroule{
-    list-style-type: '^';
-}
-
-.sous{
-    display: none;
-}
-
-.sous li{
-    margin-left: 2rem;
-    list-style-type: disc;
-}
-
-#titrePage{
-    display: flex;
-    justify-content: center;
-    font-size: larger;
-    font-weight: bold;
-    margin-bottom: 2em;
-}
-
-.contenu{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-}
-
-section{
-    display: flex;
-    flex-flow: wrap column;
-    border-bottom: 13px solid transparent;
-    margin: .5rem;
-    padding: 3px;
-    box-shadow: 0px 1px 2px #CCC;
-}
-
-section img{
-    width: 22rem;
-}
-
-h3{
-    font-size: large;
+    --bs-dropdown-link-active-bg: #f3ba00;
 }
 
 
-/****** Footer ******/
+/****** Body ******/
+
+main{
+    padding: .5rem;
+}
 
 
-footer{/*
+/****** Agenda ******/
+
+.text-bg-day{
+    background-color: #025656;
+}
+
+
+/****** Instances ******/
+
+.scrollspy-example-2 {
     position: absolute;
-    bottom: 0;
-    height: 5%;*/
-    background: linear-gradient(to right, #2c7373, #025656, #2c7373);
+    height: 100%;
+    overflow: auto;
 }
 
-footer img{
-    width: 4%;
+.nav-pills .nav-link.active{
+    background-color: #f3ba00;
+}
+
+
+/****** Instances ******/
+
+.positions{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav.nav.nav-pills.flex-column{
+    --bs-nav-pills-link-active-bg:#025656;
+    --bs-nav-link-color: #025656;
+}
+
+a.nav-link {
+    --bs-nav-link-hover-color: #2c7373;
+}
+
+
+/****** Frais diff ******/
+
+.quiz.contenu{
+    display: none
+}
+
+h2.accordion-header{
+    --bs-accordion-active-bg: #f3ba0070;
+    --bs-accordion-btn-focus-box-shadow: #f3ba009a;
+}
+
+button.btn.btn-primary{
+    --bs-btn-bg: #2c7373;
+    --bs-btn-border-color: #2c7373;
+    --bs-btn-hover-bg: #025656;
+    --bs-btn-hover-border-color: #025656;
+    --bs-btn-active-bg: #025656;
+    --bs-btn-active-border-color: #025656;
 }
