@@ -3,40 +3,296 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="../css/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        
         <title>EFFICIENCE</title>
     </head>
 
     <body>
         <header>
             <a href="../index.html"><img src="../images/logo_reseau.jpg"></a>
+
+            <nav class="navbar bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" style="color: #f3ba00" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Institutions et instances
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./html/instances.html">Instances</a></li>
+                                        <li><a class="dropdown-item active" style="background-color: #f3ba00" href="./lexique.html">Lexique</a></li>
+                                        <li><a class="dropdown-item" href="./positionsCFVU.html">Positions d'Efficience</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Aides utiles
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./frais_diff.html">Frais différenciés</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="./agenda2024.html">Agenda</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </header>
 
         <main>
-            <nav>
-                <ul class="menu">
-                    <li>Institutions et instances
-                        <ul>
-                            <li><a href="instances.html">Instances</a></li>
-                            <li><a href="lexique.html">Lexique</a></li>
-                            <li><a href="positions.html">Positions d'Efficience</a></li>
-                        </ul>
-                    </li>
-                    <li>Aides utiles
-                        <ul>
-                            <li><a href="frais_diff.html">Frais différenciés</a></li>
-                            <!-- <li><a href="logement.html">Logement</a></li>
-                            <li><a href="admin.html">Administration</a></li> -->
-                        </ul>
-                    </li>
-                    <!-- <li><a href="doc.html">Documents utiles</a></li>
-                    <li><a href="projet.html">Projets d'Efficience</a></li> -->
-                    <li><a href="agenda.html">Agenda</a></li>
-                </ul>
-            </nav>
-
-            <div class="contenu lex">
+            <div class="container-fluid h-100">
                 <h1>Acronymes</h1>
+
+                <br>
+
+                <div class="row">
+                    <div class="col-4">
+                        <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end text-center" style="position: absolute; padding-top: 5%;">
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link" href="#item-1">A</a>
+                                <a class="nav-link" href="#item-2">B</a>
+                                <a class="nav-link" href="#item-3">C</a>
+                                <a class="nav-link" href="#item-4">D</a>
+                                <a class="nav-link" href="#item-5">E</a>
+                                <a class="nav-link" href="#item-6">F</a>
+                                <a class="nav-link" href="#item-7">G</a>
+                                <a class="nav-link" href="#item-8">H</a>
+                                <a class="nav-link" href="#item-9">L</a>
+                                <a class="nav-link" href="#item-10">M</a>
+                                <a class="nav-link" href="#item-11">N</a>
+                                <a class="nav-link" href="#item-12">O</a>
+                                <a class="nav-link" href="#item-13">P</a>
+                                <a class="nav-link" href="#item-14">R</a>
+                                <a class="nav-link" href="#item-15">S</a>
+                                <a class="nav-link" href="#item-16">T</a>
+                                <a class="nav-link" href="#item-17">U</a>
+                                <a class="nav-link" href="#item-18">V</a>
+                            </nav>
+                        </nav>
+                    </div>
+                  
+                    <div class="col-8">
+                        <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+                            <div id="item-1">
+                                <h4 class="text-center">A</h4>
+
+                                <p><strong>AAP : </strong>Appel à Projet, vecteur de financement, un processus de sélection et une demande d'évaluation pour attribution des financements.</p>
+                                <p><strong>Alternance/CFA : </strong>C'est un système de formation qui est fondé sur une phase pratique et une phase théorique qui alternent. L'alternance comprend deux types de contrats : le contrat d'apprentissage et le contrat de professionnalisation. Ces deux contrats permettent de concilier travail en entreprise et formation théorique. Les centres de formation d'apprentis (CFA) donnent aux apprentis une formation générale et technique qui complète la formation reçue dans les entreprises.</p>
+                                <p><strong>ANR : </strong>L'Agence nationale de la recherche est une agence de moyens, qui finance la recherche publique et la recherche partenariale en France.</p>
+                                <p><strong>ARP : </strong>Accompagnement à la Réussite de mon Parcours.</p>
+                                
+                                <hr>
+                                <br>
+                            </div>
+                            
+                            <div id="item-2">
+                                <h4 class="text-center">B</h4>
+
+                                <p><strong>BI : </strong>Budget Initial, tel que prévu/anticipé.</p>
+                                <p><strong>BIATOSS/BIATSS : </strong>Personnels ingénieurs, administratifs, techniques, sociaux et de santé et des bibliothèques, non enseignants, relevant des établissements et des services administratifs de l'enseignement et de la recherche publique français.</p>
+                                <p><strong>BR : </strong>Budget Rectificatif, budget réel avec imprévu.</p>
+                                
+                                <hr>
+                                <br>
+                            </div>
+
+                            <div id="item-3">
+                                <h4 class="text-center">C</h4>
+
+                                <p><strong>Campagne d'Emploi : </strong>Processus de concertation long et complexe, qui participe de la structuration de l'activité et de l'organisation des composantes et des services de l'établissement ainsi que flécher la création éventuelle de nouveaux postes.</p>
+                                <p><strong>Campus'Innov : </strong>Vise à impulser une dynamique d'innovation contribuant au développement du monde socio-économique. CampusInnov propose des espaces et des dispositifs visant à permettre l'émergence, la mise en œuvre et la valorisation des projets d'innovation technologique, sociale, culturelle ou de services sous la forme de création de startups, de laboratoires communs mais aussi de rebond d'innovation d'entreprises existantes.</p>
+                                <p><strong>Centre financier (CF) : </strong></p>Unité au sein de laquelle le budget est mis en place et potentiellement exécuté.
+                                <p><strong>CNRS : </strong>Le Centre national de la recherche scientifique est un organisme public de recherche pluridisciplinaire placé sous la tutelle du ministère de l'Enseignement supérieur, de la Recherche et de l'Innovation.</p>
+                                <p><strong>Compte Financier : </strong>Toute exécution budgétaire doit donner lieu à un compte rendu d'exécution : c'est le compte financier. Il rend compte du résultat de l'exercice c'est-à-dire de l'écart entre les recettes et les dépenses.</p>
+                                <p><strong>Contrat Pédagogique : </strong>Le contrat pédagogique est établi entre chaque étudiant et l'Université, représentée par le responsable de parcours. Il engage les deux parties sur le contenu pédagogique qui sera effectivement suivi par l'étudiant au semestre en cours.</p>
+                                <p><strong>Corps universitaire : </strong>Les professeurs des universités (PU) constituent l'un des deux corps d'enseignants-chercheurs régis par le ? l'autre corps étant celui des maîtres de conférences (MCF). Les professeurs des universités ont traditionnellement l'exclusivité du titre de « professeur ».</p>
+                                <p><strong>CRB : </strong>Centre de Responsabilité Budgétaire (CRB), niveau le plus élevé dans l'organisation budgétaire et correspond aux ordonnateurs (principaux, secondaires, délégués).</p>
+                                <p><strong>CROUS : </strong>Centres Régionaux des Œuvres Universitaires et scolaires sont des établissements publics à caractère administratif, en charge des questions de logement, de bourses et de restaurations dans ses Restaurants Universitaires (RU). Sous contrat avec les universités. Possède une structure séparée de l’université et des élections propres tous les 2 ans.</p>
+                                <p><strong>CVEC : </strong>Contribution à la Vie Etudiante et de Campus, taxe affectée aux centres régionaux des œuvres universitaires et scolaires et aux établissements de l'enseignement supérieur.</p>
+                                
+                                <hr>
+                                <br>
+                            </div>
+
+                            <div id="item-4">
+                                <h4 class="text-center">D</h4>
+
+                                <p><strong>DEMOeS : </strong>L’appel à manifestations d’intérêts (AMI) « Démonstrateurs numériques dans l’enseignement supérieur » vise à identifier des établissements comme démonstrateurs prêts à déployer une stratégie de transformation numérique dans l’ensemble de leurs formations. Se manifeste notamment au travers de SMART CODE.</p>
+                                <p><strong>DGS : </strong>Directeur Général des Services, Responsable administratif le plus haut de tous les services.</p>
+                                <p><strong>DGSA : </strong>Directeur Général des Services Adjoint, Epaule le DGS sur une partie de ces missions.</p>
+                                <p><strong>Dialogue de Gestion : </strong>Processus d'échange d'informations entre les responsables budgétaires et les services opérationnels concernés par la programmation des activités. Il doit permettre aux acteurs de mieux cerner les différentes contraintes budgétaires et de fiabiliser la programmation.</p>
+                                <p><strong>DOB : </strong>Débat Orientation Budgétaire, phase politique de la préparation budgétaire, qui permet aux élus d'exprimer leur avis sur les grandes lignes du budget.</p>
+                                
+                                <hr>
+                                <br>
+                            </div>
+
+                            <div id="item-5">
+                                <h4 class="text-center">E</h4>
+
+                                <p><strong>ECTS : </strong>Le Système européen de transfert et d’accumulation de crédits ou ECTS pour European Credit Transfer and Accumulation System, est un système de points et d’équivalence développé par l'Union européenne.</p>
+                                <p><strong>EPSCP : </strong>Établissement public à caractère scientifique, culturel et professionnel, l’université en est un.</p>
+                                <p><strong>ESR : Enseignement Supérieur et Recherche.</strong></p>
+                                <p><strong>EU-Conexus : Alliance d’universités européennes unies autour de la thématique du Littoral Urbain, Durable et Intelligent, composé de 9 universités : L’Université catholique de valence (Espagne), L’Université de Zadar (Croatie), L’Université d’Agriculture d’Athènes (Grèce), L’Université Technique de construction de Bucarest (Roumanie), L’Université de Klaipeda (Lituanie), L’Université de Frederick (Chypre), L’Université de Rostock (Allemagne) et l’Université Technologique du Sud-Est (Irlande).</strong></p>
+                                <p><strong>EXCELR : </strong>« Excellences sous toutes ses formes » vise à reconnaître l’excellence sous toutes ses formes et à accompagner les établissements d’enseignement supérieur et de recherche porteurs d’un projet de transformation ambitieux. Avec une durée prévue de 120 mois, « ExcelLR » est fondé sur 4 axes clés : Renforcer la spécialisation dans la recherche ; Stimuler l’attractivité en développant des cursus spécialisés ; Augmenter l’impact sociétal et ancrer l’Université dans son territoire ; Concevoir de nouveaux outils de pilotage et des indicateurs de suivi de la stratégie de l’Université.</p>
+                                <p><strong>Extra-Communautaire : </strong>Hors de l’Union Européenne.</p>
+                                
+                                <hr>
+                                <br>
+                            </div>
+
+                            <div id="item-6">
+                                <h4 class="text-center">F</h4>
+
+                                <p><strong>FC (Formation Continue)/FI (Formation Initiale) : </strong>La formation continue est un mode d'apprentissage proposé aux professionnels salariés et aux demandeurs d'emploi en vue d'améliorer leurs compétences ou d'acquérir de nouvelles connaissances professionnelles. A l’inverse, La formation initiale, correspond à la formation de base, suivie avant d'entrer sur le marché du travail. Elle sert à acquérir des connaissances et des compétences nécessaires pour entrer dans la vie active.</p>
+                                <p><strong>Fédération LUDI : </strong>Fédération autour de cette thématique du Littoral Urbain, Durable et Intelligent.</p>
+                                <p><strong>Fondation La Rochelle Université : </strong>Les universités peuvent créer des fondations afin de diversifier leurs sources de financement, en permettant le recours aux dons privés en complément des budgets publics mais également afin de développer des partenariats. La Rochelle Université a créé sa Fondation Universitaire en juillet 2009, marquant sa volonté de construire des partenariats durables avec le monde socio-économique, et de se positionner comme un acteur du développement économique.</p>
+                                
+                                <hr>
+                                <br>
+                            </div>
+
+                            <div id="item-7">
+                                <h4 class="text-center">G</h4>
+
+                                <p><strong>GPEEC : </strong>Gestion Prévisionnelle des Emplois, des Effectifs et des Compétences vise à construire une vision d'ensemble de la fonction Ressource Humaine afin de consacrer les moyens utiles pour satisfaire les missions voulues.</p>
+                                <p><strong>GT : </strong>Groupe de Travail.</p>
+                                
+                                <hr>
+                                <br>
+                            </div>
+
+                            <div id="item-8">
+                                <h4 class="text-center">H</h4>
+
+                                <p><strong>HDR : </strong>L'Habilitation à Diriger des Recherches, est un diplôme national de l'enseignement supérieur qu'il est possible d'obtenir après un doctorat. Il permet de diriger des thèses de doctorat.</p>
+                                
+                                <hr>
+                                <br>
+                            </div>
+
+                            <div id="item-9">
+                                <h4 class="text-center">L</h4>
+
+                                <p><strong>Laboratoire : </strong>Un laboratoire de recherche ou une unité de recherche est une structure sociale constituée donnant un cadre de travail aux chercheurs. Il peut être affilié à une université, à un musée, ou à un organisme de recherche scientifique.</p>
+                                <p><strong>LRTZC : </strong>Le projet La Rochelle Territoire Zéro Carbone (LRTZC) répond aux problématiques d'atténuation et d'adaptation au changement climatique. L'axe « carbone bleu » mobilise les capacités des écosystèmes humides et littoraux à séquestrer  le carbone.</p>
+                                <p><strong>LUDI : </strong>Ancrée historiquement sur un territoire aux caractéristiques littorales très marquées, La Rochelle Université a fait de cette singularité une véritable signature, au service d’un nouveau modèle. Elle s’appuie notamment sur la spécialisation de sa recherche autour de la thématique du Littoral Urbain, Durable et Intelligent.</p>
+                                
+                                <hr>
+                                <br>
+                            </div>
+
+                            <div id="item-10">
+                                <h4 class="text-center">M</h4>
+
+                                <p><strong>MESRI : </strong>Ministère de l’Enseignement Supérieur de la Recherche et de l’Innovation.</p>
+                                
+                                <hr>
+                                <br>
+                            </div>
+
+                            <div id="item-11">
+                                <h4 class="text-center">N</h4>
+
+                                <p><strong>NCU : </strong>Nouveaux Cursus Universitaires, Appel à Projet de l’Agence Nationale de la Recherche se décline à La Rochelle par le projet OPEN CV.</p>
+                                
+                                <hr>
+                                <br>
+                            </div>
+
+                            <div id="item-12">
+                                <h4 class="text-center">O</h4>
+
+                                <p><strong>OPEN CV : </strong>Création d’un parcours de formation ayant une coloration différente selon le projet de l’étudiant, se manifeste notamment dans les mineures.</p>
+                                
+                                <hr>
+                                <br>
+                            </div>
+
+                            <div id="item-13">
+                                <h4 class="text-center">P</h4>
+
+                                <p><strong>PIA : </strong>Les investissements d’avenir, aussi appelés programme d'investissement d'avenir, programme d’investissement et d’appels à projet de l’État français pour l'enseignement supérieur et la recherche, actuellement sous la 4ème vague.</p>
+                                <p><strong>PIA4 : </strong>4ème Programme d’investissement d’avenir.</p>
+                                
+                                <hr>
+                                <br>
+                            </div>
+
+                            <div id="item-14">
+                                <h4 class="text-center">R</h4>
+
+                                <p><strong>Recteur : </strong>Universitaire qui est à la tête d'une académie.</p>
+                                <p><strong>RePer : </strong>Remédiation et Personnalisation, un nouveau dispositif mis en place dans le cadre de la nouvelle offre de formation (NOF) 2022 - 2027.</p>
+                                <p><strong>RIFSEEP : </strong>Le régime indemnitaire tenant compte des fonctions, des sujétions, de l'expertise et de l'engagement professionnel (Rifseep) est le régime indemnitaire de référence. Il sert aussi de référence aux régimes indemnitaires de la plupart des cadres d'emplois territoriaux.</p>
+                                <p><strong>RIPEC : </strong>Le nouveau régime indemnitaire des chercheurs de l'Inserm. Le régime indemnitaire des personnels enseignants et chercheurs (Ripec) se substitue aux primes et indemnités versées antérieurement.</p>
+                                
+                                <hr>
+                                <br>
+                            </div>
+
+                            <div id="item-15">
+                                <h4 class="text-center">S</h4>
+
+                                <p><strong>SCSP : </strong>Subvention pour charges de service public.</p>
+                                <p><strong>SMART CAMPUS : </strong>Le projet Smart Campus, à l’image des smart cities, se veut être une projection anticipatrice de la construction d’un campus universitaire intelligent, en mesure d’adapter de manière autonome son fonctionnement et ses missions, pour faire face aux grands enjeux liés aux transitions climatique, écologique et numérique.</p>
+                                <p><strong>SMART CODE : </strong>Des parcours de formation ouverts en multimodalités avec de nouveaux modes d’organisation numérique, pédagogique et administrative permettant une personnalisation pédagogique, centrée usager.</p>
+                                <p><strong>SO : </strong>Ensemble des recettes et dépenses d'un particulier, d'une entreprise, etc. ; somme dont on dispose : Boucler son budget.</p>
+                                
+                                <hr>
+                                <br>
+                            </div>
+
+                            <div id="item-16">
+                                <h4 class="text-center">T</h4>
+
+                                <p><strong>TEA : </strong>Travail en Autonomie ou Accompagnement, temps de travail moins encadré qu’en travaux dirigés.</p>
+                                
+                                <hr>
+                                <br>
+                            </div>
+
+                            <div id="item-17">
+                                <h4 class="text-center">U</h4>
+
+                                <p><strong>UE/EC : </strong>Les enseignements sont distribués en UE (unités d'enseignement) ; chaque UE comporte un ou plusieurs EC (éléments constitutifs) qui sont les matières. À chaque EC est affecté un nombre donné de crédits ; un semestre de licence compte 30 crédits (ECTS).</p>
+                                <p><strong>UFR : </strong>Unité de Formation et de Recherche. En France, composante universitaire associant des départements de formation, des laboratoires et des centres de recherche. Composante supprimée à La Rochelle Université pour être remplacé par le Collegium et le LUDI.</p>
+                                <p><strong>UMR : </strong>Les Unités Mixtes de Recherche sont des entités administratives associant des équipes du CNRS à un ou plusieurs laboratoires de recherche ou universités. Il s'agit du socle de base de la recherche en France. Elles sont liées par contrat de cinq ans reconductibles aux établissements hôtes.</p>
+                                
+                                <hr>
+                                <br>
+                            </div>
+
+                            <div id="item-18">
+                                <h4 class="text-center">V</h4>
+
+                                <p><strong>Vacataire/Contractuel : </strong>À la différence de l'agent contractuel, le vacataire n'est pas recruté pour assurer un besoin permanent de l'administration. Le vacataire n'est pas recruté sur un emploi. Il est recruté pour accomplir une tâche précise et ponctuelle.</p>
+                                <p><strong>VP : </strong>Seconde le président sur un périmètre.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="contenu lex">
+                <h1>Acronymes</h1>
+                
 
                 <ul>
                     <div>
@@ -70,11 +326,11 @@
                     <li>Centre financier (CF) : unité au sein de laquelle le budget est mis en place et potentiellement exécuté.</li>
                     <li>CNRS : Le Centre national de la recherche scientifique est un organisme public de recherche pluridisciplinaire placé sous la tutelle du ministère de l'Enseignement supérieur, de la Recherche et de l'Innovation. </li>
                     <li>Compte Financier : Toute exécution budgétaire doit donner lieu à un compte rendu d'exécution : c'est le compte financier. Il rend compte du résultat de l'exercice c'est-à-dire de l'écart entre les recettes et les dépenses.</li>
-                    <li>Contrat Pédagogique : Le contrat pédagogique est établi entre chaque étudiant et l'Université, représentée par le responsable de parcours. Il engage les deux parties sur le contenu pédagogique qui sera effectivement suivi par l'étudiant au semestre en cours.</li>
-                    <li>Corps universitaire : Les professeurs des universités (PU) constituent l'un des deux corps d'enseignants-chercheurs régis par le ? l'autre corps étant celui des maîtres de conférences (MCF). Les professeurs des universités ont traditionnellement l'exclusivité du titre de « professeur ».</li>
-                    <li>CRB : Centre de Responsabilité Budgétaire (CRB), niveau le plus élevé dans l'organisation budgétaire et correspond aux ordonnateurs (principaux, secondaires, délégués).</li>
-                    <li>CROUS : Centres Régionaux des Œuvres Universitaires et scolaires sont des établissements publics à caractère administratif, en charge des questions de logement, de bourses et de restaurations dans ses Restaurants Universitaires (RU). Sous contrat avec les universités. Possède une structure séparée de l’université et des élections propres tous les 2 ans.</li>
-                    <li>CVEC : Contribution à la Vie Etudiante et de Campus, taxe affectée aux centres régionaux des œuvres universitaires et scolaires et aux établissements de l'enseignement supérieur.</li>
+                    <li><strong>Contrat Pédagogique : </strong>Le contrat pédagogique est établi entre chaque étudiant et l'Université, représentée par le responsable de parcours. Il engage les deux parties sur le contenu pédagogique qui sera effectivement suivi par l'étudiant au semestre en cours.</li>
+                    <li><strong>Corps universitaire : </strong>Les professeurs des universités (PU) constituent l'un des deux corps d'enseignants-chercheurs régis par le ? l'autre corps étant celui des maîtres de conférences (MCF). Les professeurs des universités ont traditionnellement l'exclusivité du titre de « professeur ».</li>
+                    <li><strong>CRB : </strong>Centre de Responsabilité Budgétaire (CRB), niveau le plus élevé dans l'organisation budgétaire et correspond aux ordonnateurs (principaux, secondaires, délégués).</li>
+                    <li><strong>CROUS : </strong>Centres Régionaux des Œuvres Universitaires et scolaires sont des établissements publics à caractère administratif, en charge des questions de logement, de bourses et de restaurations dans ses Restaurants Universitaires (RU). Sous contrat avec les universités. Possède une structure séparée de l’université et des élections propres tous les 2 ans.</li>
+                    <li><strong>CVEC : </strong>Contribution à la Vie Etudiante et de Campus, taxe affectée aux centres régionaux des œuvres universitaires et scolaires et aux établissements de l'enseignement supérieur.</li>
                 </ul>
 
                 <hr>
@@ -84,10 +340,10 @@
                         <h3 class="lettre">D</h3>
                     </div>
                     <li>DEMOeS : L’appel à manifestations d’intérêts (AMI) « Démonstrateurs numériques dans l’enseignement supérieur » vise à identifier des établissements comme démonstrateurs prêts à déployer une stratégie de transformation numérique dans l’ensemble de leurs formations. Se manifeste notamment au travers de SMART CODE</li>
-                    <li>DGS : Directeur Général des Services, Responsable administratif le plus haut de tous les services</li>
-                    <li>DGSA : Directeur Général des Services Adjoint, Epaule le DGS sur une partie de ces missions</li>
-                    <li>Dialogue de Gestion : processus d'échange d'informations entre les responsables budgétaires et les services opérationnels concernés par la programmation des activités. Il doit permettre aux acteurs de mieux cerner les différentes contraintes budgétaires et de fiabiliser la programmation.</li>
-                    <li>DOB : Débat Orientation Budgétaire, phase politique de la préparation budgétaire, qui permet aux élus d'exprimer leur avis sur les grandes lignes du budget</li>
+                    <li>DGS : Directeur Général des Services, Responsable administratif le plus haut de tous les services.</li>
+                    <li>DGSA : Directeur Général des Services Adjoint, Epaule le DGS sur une partie de ces missions.</li>
+                    <li>Dialogue de Gestion : Processus d'échange d'informations entre les responsables budgétaires et les services opérationnels concernés par la programmation des activités. Il doit permettre aux acteurs de mieux cerner les différentes contraintes budgétaires et de fiabiliser la programmation.</li>
+                    <li>DOB : Débat Orientation Budgétaire, phase politique de la préparation budgétaire, qui permet aux élus d'exprimer leur avis sur les grandes lignes du budget.</li>
                 </ul>
 
                 <hr>
@@ -98,10 +354,10 @@
                     </div>
                     <li>ECTS : Le Système européen de transfert et d’accumulation de crédits ou ECTS pour European Credit Transfer and Accumulation System, est un système de points et d’équivalence développé par l'Union européenne</li>
                     <li>EPSCP : Établissement public à caractère scientifique, culturel et professionnel, l’université en est un.</li>
-                    <li>ESR : Enseignement Supérieur et Recherche</li>
+                    <li>ESR : Enseignement Supérieur et Recherche.</li>
                     <li>EU-Conexus : Alliance d’universités européennes unies autour de la thématique du Littoral Urbain, Durable et Intelligent, composé de 9 universités : L’Université catholique de valence (Espagne), L’Université de Zadar (Croatie), L’Université d’Agriculture d’Athènes (Grèce), L’Université Technique de construction de Bucarest (Roumanie), L’Université de Klaipeda (Lituanie), L’Université de Frederick (Chypre), L’Université de Rostock (Allemagne) et l’Université Technologique du Sud-Est (Irlande).</li>
-                    <li>EXCELR : « Excellences sous toutes ses formes » vise à reconnaître l’excellence sous toutes ses formes et à accompagner les établissements d’enseignement supérieur et de recherche porteurs d’un projet de transformation ambitieux. Avec une durée prévue de 120 mois, « ExcelLR » est fondé sur 4 axes clés : Renforcer la spécialisation dans la recherche ; Stimuler l’attractivité en développant des cursus spécialisés ; Augmenter l’impact sociétal et ancrer l’Université dans son territoire ; Concevoir de nouveaux outils de pilotage et des indicateurs de suivi de la stratégie de l’Université</li>
-                    <li>Extra-Communautaire : Hors de l’Union Européenne</li>
+                    <li>EXCELR : « Excellences sous toutes ses formes » vise à reconnaître l’excellence sous toutes ses formes et à accompagner les établissements d’enseignement supérieur et de recherche porteurs d’un projet de transformation ambitieux. Avec une durée prévue de 120 mois, « ExcelLR » est fondé sur 4 axes clés : Renforcer la spécialisation dans la recherche ; Stimuler l’attractivité en développant des cursus spécialisés ; Augmenter l’impact sociétal et ancrer l’Université dans son territoire ; Concevoir de nouveaux outils de pilotage et des indicateurs de suivi de la stratégie de l’Université.</li>
+                    <li>Extra-Communautaire : Hors de l’Union Européenne.</li>
                 </ul>
 
                 <hr>
@@ -110,8 +366,8 @@
                     <div>
                         <h3 class="lettre">F</h3>
                     </div>
-                    <li>FC (Formation Continue) /FI (Formation Initiale) : La formation continue est un mode d'apprentissage proposé aux professionnels salariés et aux demandeurs d'emploi en vue d'améliorer leurs compétences ou d'acquérir de nouvelles connaissances professionnelles. A l’inverse, La formation initiale, correspond à la formation de base, suivie avant d'entrer sur le marché du travail. Elle sert à acquérir des connaissances et des compétences nécessaires pour entrer dans la vie active.</li>
-                    <li>Fédération LUDI : Fédération autour de cette thématique du Littoral Urbain, Durable et Intelligent</li>
+                    <li>FC (Formation Continue)/FI (Formation Initiale) : La formation continue est un mode d'apprentissage proposé aux professionnels salariés et aux demandeurs d'emploi en vue d'améliorer leurs compétences ou d'acquérir de nouvelles connaissances professionnelles. A l’inverse, La formation initiale, correspond à la formation de base, suivie avant d'entrer sur le marché du travail. Elle sert à acquérir des connaissances et des compétences nécessaires pour entrer dans la vie active.</li>
+                    <li>Fédération LUDI : Fédération autour de cette thématique du Littoral Urbain, Durable et Intelligent.</li>
                     <li>Fondation La Rochelle Université : Les universités peuvent créer des fondations afin de diversifier leurs sources de financement, en permettant le recours aux dons privés en complément des budgets publics mais également afin de développer des partenariats. La Rochelle Université a créé sa Fondation Universitaire en juillet 2009, marquant sa volonté de construire des partenariats durables avec le monde socio-économique, et de se positionner comme un acteur du développement économique.</li>
                 </ul>
 
@@ -142,7 +398,7 @@
                     </div>
                     <li>Laboratoire : Un laboratoire de recherche ou une unité de recherche est une structure sociale constituée donnant un cadre de travail aux chercheurs. Il peut être affilié à une université, à un musée, ou à un organisme de recherche scientifique</li>
                     <li>LRTZC : Le projet La Rochelle Territoire Zéro Carbone (LRTZC) répond aux problématiques d'atténuation et d'adaptation au changement climatique. L'axe « carbone bleu » mobilise les capacités des écosystèmes humides et littoraux à séquestrer  le carbone.</li>
-                    <li>LUDI : Ancrée historiquement sur un territoire aux caractéristiques littorales très marquées, La Rochelle Université a fait de cette singularité une véritable signature, au service d’un nouveau modèle. Elle s’appuie notamment sur la spécialisation de sa recherche autour de la thématique du Littoral Urbain, Durable et Intelligent</li>
+                    <li>LUDI : Ancrée historiquement sur un territoire aux caractéristiques littorales très marquées, La Rochelle Université a fait de cette singularité une véritable signature, au service d’un nouveau modèle. Elle s’appuie notamment sur la spécialisation de sa recherche autour de la thématique du Littoral Urbain, Durable et Intelligent.</li>
                 </ul>
 
                 <hr>
@@ -151,7 +407,7 @@
                     <div>
                         <h3 class="lettre">M</h3>
                     </div>
-                    <li>MESRI : ministère de l’Enseignement Supérieur de la Recherche et de l’Innovation</li>
+                    <li>MESRI : Ministère de l’Enseignement Supérieur de la Recherche et de l’Innovation</li>
                 </ul>
 
                 <hr>
@@ -179,7 +435,7 @@
                         <h3 class="lettre">P</h3>
                     </div>
                     <li>PIA : Les investissements d’avenir, aussi appelés programme d'investissement d'avenir, programme d’investissement et d’appels à projet de l’État français pour l'enseignement supérieur et la recherche, actuellement sous la 4ème vague.</li>
-                    <li>PIA4 : 4ème Programme d’investissement d’avenir</li>
+                    <li>PIA4 : 4ème Programme d’investissement d’avenir.</li>
                 </ul>
 
                 <hr>
@@ -189,9 +445,9 @@
                         <h3 class="lettre">R</h3>
                     </div>
                     <li>Recteur : Universitaire qui est à la tête d'une académie</li>
-                    <li>RePer : Remédiation et Personnalisation, un nouveau dispositif mis en place dans le cadre de la nouvelle offre de formation (NOF) 2022 - 2027</li>
+                    <li>RePer : Remédiation et Personnalisation, un nouveau dispositif mis en place dans le cadre de la nouvelle offre de formation (NOF) 2022 - 2027.</li>
                     <li>RIFSEEP : Le régime indemnitaire tenant compte des fonctions, des sujétions, de l'expertise et de l'engagement professionnel (Rifseep) est le régime indemnitaire de référence. Il sert aussi de référence aux régimes indemnitaires de la plupart des cadres d'emplois territoriaux.</li>
-                    <li>RIPEC : le nouveau régime indemnitaire des chercheurs de l'Inserm. Le régime indemnitaire des personnels enseignants et chercheurs (Ripec) se substitue aux primes et indemnités versées antérieurement.</li>
+                    <li>RIPEC : Le nouveau régime indemnitaire des chercheurs de l'Inserm. Le régime indemnitaire des personnels enseignants et chercheurs (Ripec) se substitue aux primes et indemnités versées antérieurement.</li>
                 </ul>
 
                 <hr>
@@ -222,8 +478,8 @@
                         <h3 class="lettre">U</h3>
                     </div>
                     <li>UE/EC : Les enseignements sont distribués en UE (unités d'enseignement) ; chaque UE comporte un ou plusieurs EC (éléments constitutifs) qui sont les matières. À chaque EC est affecté un nombre donné de crédits ; un semestre de licence compte 30 crédits (ECTS) </li>
-                    <li>UFR : Unité de Formation et de Recherche. En France, composante universitaire associant des départements de formation, des laboratoires et des centres de recherche. Composante supprimée à La Rochelle Université pour être remplacé par le Collegium et le LUDI</li>
-                    <li>UMR : Les Unités Mixtes de Recherche sont des entités administratives associant des équipes du CNRS à un ou plusieurs laboratoires de recherche ou universités. Il s'agit du socle de base de la recherche en France. Elles sont liées par contrat de cinq ans reconductibles aux établissements hôtes</li>
+                    <li>UFR : Unité de Formation et de Recherche. En France, composante universitaire associant des départements de formation, des laboratoires et des centres de recherche. Composante supprimée à La Rochelle Université pour être remplacé par le Collegium et le LUDI.</li>
+                    <li>UMR : Les Unités Mixtes de Recherche sont des entités administratives associant des équipes du CNRS à un ou plusieurs laboratoires de recherche ou universités. Il s'agit du socle de base de la recherche en France. Elles sont liées par contrat de cinq ans reconductibles aux établissements hôtes.</li>
                 </ul>
 
                 <hr>
@@ -233,9 +489,9 @@
                         <h3 class="lettre">V</h3>
                     </div>
                     <li>Vacataire/Contractuel : À la différence de l'agent contractuel, le vacataire n'est pas recruté pour assurer un besoin permanent de l'administration. Le vacataire n'est pas recruté sur un emploi. Il est recruté pour accomplir une tâche précise et ponctuelle.</li>
-                    <li>VP : Seconde le président sur un périmètre</li>
+                    <li>VP : Seconde le président sur un périmètre.</li>
                 </ul>
-            </div>
+            </div>-->
         </main>
     </body>
 </html>
